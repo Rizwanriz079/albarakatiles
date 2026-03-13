@@ -56,16 +56,39 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1rem 0;
-    background: white;
-    border-bottom: 1px solid #f0f0f0;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+    padding: 1.2rem 0;
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
     transition: all 0.4s ease;
 }
 
 .navbar.scrolled {
     padding: 0.7rem 0;
+    background: white;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* When NOT scrolled: white text for hero overlay */
+.navbar:not(.scrolled) .nav-links a {
+    color: white;
+}
+
+.navbar:not(.scrolled) .nav-links a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar:not(.scrolled) .brand-name strong {
+    color: white;
+}
+
+.navbar:not(.scrolled) .brand-name span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar:not(.scrolled) .brand {
+    color: white;
 }
 
 .nav-container {
@@ -148,12 +171,12 @@ body {
 .hero {
     height: 100vh;
     display: flex;
-    margin-top: 68px;
+    margin-top: 0;
 }
 
 .hero-image-side {
     width: 50%;
-    height: calc(100vh - 68px);
+    height: 100vh;
 }
 
 .hero-image-side img {
@@ -356,7 +379,7 @@ body {
 
 .about-features {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -366,17 +389,36 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.03);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-bottom: 3px solid transparent;
 }
 
 .feature-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid var(--red);
 }
 
 .feature-icon {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1.2rem;
+    display: inline-block;
+}
+
+@keyframes iconFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.feature-card:hover .feature-icon {
+    animation: iconFloat 1.5s ease-in-out infinite;
 }
 
 .feature-card h3 {
@@ -519,12 +561,6 @@ body {
     color: rgba(255, 255, 255, 0.4);
     font-size: 0.85rem;
     line-height: 1.6;
-}
-
-.gstin-text {
-    font-size: 0.75rem;
-    opacity: 0.35;
-    margin-top: 0.5rem;
 }
 
 .footer-wa {
