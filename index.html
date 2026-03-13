@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL BARAKA | Tiles & Granite - Kerala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar: Solid white, always visible -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="brand">
+                <svg viewBox="0 0 100 100" class="brand-mark">
+                    <path d="M 15 50 A 35 35 0 1 1 25 80" fill="none" stroke="#d3121e" stroke-width="6"
+                        stroke-linecap="round" />
+                    <path d="M 50 15 L 85 70 L 15 70 Z" fill="#111111" />
+                    <path d="M 50 50 L 90 90 L 10 90 Z" fill="#d3121e" />
+                </svg>
+                <div class="brand-name">
+                    <strong>AL BARAKA</strong>
+                    <span>TILES & GRANITE</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO: Split-screen (image left, text right) like the earlier design -->
+    <header id="home" class="hero">
+        <div class="hero-image-side">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070&auto=format&fit=crop"
+                alt="Luxury Interior">
+        </div>
+        <div class="hero-text-side">
+            <div class="hero-text-content">
+                <span class="category-tag">Established 2026</span>
+                <h1 class="display-title">Curating<br><span class="italic">Excellence.</span></h1>
+                <p class="hero-desc">Kerala's destination for international standard tiles and premium natural granite.
+                    Hand-selected for the modern visionary.</p>
+                <div class="hero-btns">
+                    <a href="#collections" class="btn btn-dark">Explore Gallery</a>
+                    <a href="https://wa.me/919876543210?text=Hi%20Al%20Baraka%2C%20I%20would%20like%20to%20inquire%20about%20your%20tiles%20and%20granite%20collection."
+                        target="_blank" class="btn btn-whatsapp">💬 Inquire on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ticker -->
+    <section class="ticker">
+        <div class="ticker-wrap">
+            <div class="ticker-content">
+                <span>VITRIFIED TILES</span><span>•</span>
+                <span>NATURAL GRANITE</span><span>•</span>
+                <span>ITALIAN MARBLE</span><span>•</span>
+                <span>QUARTZ SURFACES</span><span>•</span>
+                <span>PORCELAIN TILES</span><span>•</span>
+                <span>BATHROOM FITTINGS</span><span>•</span>
+                <span>VITRIFIED TILES</span><span>•</span>
+                <span>NATURAL GRANITE</span><span>•</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section id="collections" class="products">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="sub-label">Our Showroom</span>
+                <h2 class="section-title">Tiles & Granite <span class="italic">Collections</span></h2>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?q=80&w=1200"
+                            alt="White Marble Tile">
+                        <div class="card-overlay"><span class="card-tag">800 x 1200 mm</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Statuario White</h3>
+                        <p>High-Gloss Vitrified Tile</p>
+                        <span class="status-available">✅ Available</span>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1200"
+                            alt="Grey Floor Tile">
+                        <div class="card-overlay"><span class="card-tag">600 x 600 mm</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Urban Matte Grey</h3>
+                        <p>Textured Porcelain Floor Tile</p>
+                        <span class="status-available">✅ Available</span>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200"
+                            alt="Marble Interior">
+                        <div class="card-overlay"><span class="card-tag">600 x 1200 mm</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Calacatta Gold</h3>
+                        <p>Polished Marble Look Tile</p>
+                        <span class="status-available">✅ Available</span>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200"
+                            alt="Dark Stone">
+                        <div class="card-overlay"><span class="card-tag">1200 x 1200 mm</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Royal Onyx Dark</h3>
+                        <p>Translucent Vitrified Series</p>
+                        <span class="status-available">✅ Available</span>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1200"
+                            alt="Dark Kitchen Granite">
+                        <div class="card-overlay"><span class="card-tag">Natural Stone</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Black Galaxy Granite</h3>
+                        <p>Premium Indian Natural Granite</p>
+                        <span class="status-premium">⭐ Premium</span>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200"
+                            alt="White Granite Counter">
+                        <div class="card-overlay"><span class="card-tag">Exotic Natural</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Alaskan White Granite</h3>
+                        <p>Crystal Natural Granite Slab</p>
+                        <span class="status-premium">⭐ Premium</span>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200"
+                            alt="Bathroom Tiles">
+                        <div class="card-overlay"><span class="card-tag">300 x 600 mm</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Carrara Bathroom</h3>
+                        <p>Wall & Floor Ceramic Series</p>
+                        <span class="status-available">✅ Available</span>
+                    </div>
+                </div>
+
+                <div class="product-card reveal-up">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200"
+                            alt="Wood Floor Tile">
+                        <div class="card-overlay"><span class="card-tag">200 x 1200 mm</span></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Alpine Wood Plank</h3>
+                        <p>Porcelain Wood-Look Series</p>
+                        <span class="status-available">✅ Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-header reveal-up">
+                <span class="sub-label">Who We Are</span>
+                <h2 class="section-title">About <span class="text-red">Al Baraka</span></h2>
+            </div>
+            <div class="about-features">
+                <div class="feature-card reveal-up">
+                    <div class="feature-icon">🏗️</div>
+                    <h3>Premium Quality</h3>
+                    <p>Only the finest tiles and natural granite from trusted quarries across India.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-icon">🌍</div>
+                    <h3>International Standards</h3>
+                    <p>Products that meet global quality certifications and architectural benchmarks.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Kerala-Wide Delivery</h3>
+                    <p>Reliable delivery of tiles and granite slabs across all of Kerala.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-icon">💎</div>
+                    <h3>Expert Guidance</h3>
+                    <p>Our team helps you choose the perfect surfaces for every space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT: Map on left side + Info on right -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="sub-label">📍 Get In Touch</span>
+                <h2 class="section-title">Visit Our <span class="italic">Showroom</span></h2>
+            </div>
+            <div class="contact-grid reveal-up">
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.123!2d75.924!3d10.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sChamravattom%2C%20Tirur%2C%20Kerala%20679573!5e0!3m2!1sen!2sin!4v1"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-info">
+                    <h3>📍 Showroom Address</h3>
+                    <p>Pothanur Road, Nariparamba,<br>Chamravattom, Tirur,<br>Kerala 679573, India</p>
+
+                    <h3>📞 Get In Touch</h3>
+                    <p>Call us for the best prices on premium tiles and granite.</p>
+                    <a href="https://wa.me/919876543210?text=Hi%20Al%20Baraka%2C%20I%20want%20to%20inquire%20about%20tiles."
+                        target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+
+                    <h3>🕐 Showroom Hours</h3>
+                    <p>Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER: Compact international style -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo-row">
+                        <svg viewBox="0 0 100 100" class="brand-mark-sm">
+                            <path d="M 15 50 A 35 35 0 1 1 25 80" fill="none" stroke="#d3121e" stroke-width="6"
+                                stroke-linecap="round" />
+                            <path d="M 50 15 L 85 70 L 15 70 Z" fill="#ffffff" />
+                            <path d="M 50 50 L 90 90 L 10 90 Z" fill="#d3121e" />
+                        </svg>
+                        <span class="footer-brand-text">AL BARAKA</span>
+                    </div>
+                    <p class="footer-desc">Kerala's trusted destination for premium tiles, natural granite, and
+                        architectural surfaces since 2026.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#collections">Collections</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <a href="#collections">Vitrified Tiles</a>
+                    <a href="#collections">Natural Granite</a>
+                    <a href="#collections">Porcelain Tiles</a>
+                    <a href="#collections">Bathroom Fittings</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Pothanur Road, Nariparamba,<br>Chamravattom, Tirur, Kerala</p>
+                    <p class="gstin-text">GSTIN: 32AUJPV4753A1ZP</p>
+                    <a href="https://wa.me/919876543210" target="_blank" class="footer-wa">💬 WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Baraka Tiles & Granite. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
